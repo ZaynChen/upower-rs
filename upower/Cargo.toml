@@ -1,0 +1,24 @@
+[package]
+name = "upower"
+description = "Rust bindings for upower"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+categories.workspace = true
+repository.workspace = true
+license.workspace = true
+keywords.workspace = true
+exclude.workspace = true
+
+[package.metadata.docs.rs]
+all-features = true
+rustc-args = ["--cfg", "docsrs"]
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+ffi = { package = "upower-glib-sys", path = "sys" }
+glib.workspace = true
+gio.workspace = true
+
+[features]
+gio_v2_22 = []

@@ -1,0 +1,32 @@
+[options]
+library = "UPowerGlib"
+version = "1.0"
+min_cfg_version = "1.91.0"
+target_path = "."
+girs_directories = ["../upower-gir-files"]
+work_mode = "normal"
+single_version_file = true
+generate_safety_asserts = true
+deprecate_by_min_version = true
+use_gi_docgen = false
+generate_builder = true
+
+generate = [
+  "UPowerGlib.Client",
+  "UPowerGlib.Device",
+  "UPowerGlib.DeviceKind",
+  "UPowerGlib.DeviceLevel",
+  "UPowerGlib.DeviceState",
+  "UPowerGlib.DeviceTechnology",
+  "UPowerGlib.HistoryItem",
+  "UPowerGlib.StatsItem",
+]
+
+manual = [
+  "GLib.Error",
+  "Gio.AsyncInitable",
+  "Gio.AsyncResult",
+  "Gio.AsyncReadyCallback",
+  "Gio.Cancellable",
+  "Gio.Initable",
+]

@@ -1,0 +1,21 @@
+[workspace]
+resolver = "3"
+members = ["upower", "upower/sys"]
+exclude = ["gir"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Zayn Chen <zaynchen@qq.com>"]
+categories = ["api-bindings"]
+repository = "https://github.com/zaynchen/upower-rs"
+license = "MIT"
+keywords = ["upower"]
+exclude = ["gir-files/*", "upower-gir-files"]
+
+[workspace.dependencies]
+gobject-sys = { version = "0.21" }
+glib-sys = { version = "0.21" }
+glib = { version = "0.21" }
+gio-sys = { version = "0.21" }
+gio = { version = "0.21" }
